@@ -1,0 +1,35 @@
+body {
+    font-family: 'Graphik LCG', sans-serif;
+    background-color: #fff;
+    color: #52525B;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+:root {
+    --text-color: #52525B;
+  }
+/* container */
+.true-container {
+    width: calc(1360px + 40px * 2);
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+@media (max-width: 991px) {
+    .true-container {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .true-container {
+        padding: 0 20px;
+    }
+}
+
+.header,
+.footer {
+    background-color: antiquewhite;
+}
