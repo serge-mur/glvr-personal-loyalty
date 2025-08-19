@@ -11,14 +11,241 @@
 </head>
 
 <body>
-    <header class="header">header</header>
+    <div class="true-container">  
+        <header class="header">header</header>
 
-    <div class="personal-loyalty">
-        
+        <div class="personal-loyalty">
+
+            <div class="personal-loyalty__sidebar sidebar">
+                <div class="sidebar__username">Константин<br> Константинопольский<br> Оглы</div>
+                <nav class="sidebar__menu">
+                    <a href="#" class="sidebar__menu-item sidebar__menu-item_active">Программа лояльности</a>
+                    <a href="#" class="sidebar__menu-item">Мои заказы</a>
+                    <a href="#" class="sidebar__menu-item">Личная информация</a>
+                    <a href="#" class="sidebar__menu-item">Дети <span class="sidebar__menu-count">1</span></a>
+                </nav>
+            </div>
+
+            <div class="personal-loyalty__content loyalty">
+
+                <h1 class="loyalty__title">Программа лояльности Gulliver Family</h1>
+                
+                <nav class="loyalty__menu">
+                    <a href="#points" class="loyalty__menu-item">Мои баллы</a>
+                    <a href="#history" class="loyalty__menu-item">История</a>
+                    <a href="#faq" class="loyalty__menu-item">Часто задаваемые вопросы</a>
+                </nav>
+
+                <section class="loyalty__points points" id="points">
+                    <div class="points__list-side">
+                        <div class="section-title">Мои баллы</div>
+                        <div class="points__wrapper">
+                            <div class="points__block">
+                                <div class="points__title">
+                                    <span>Кэшбек-баллы</span>
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.00098 1.55078C11.9587 1.55113 15.167 4.75995 15.167 8.71777C15.1666 12.6753 11.9585 15.8834 8.00098 15.8838C4.04315 15.8838 0.834337 12.6755 0.833984 8.71777C0.833984 4.75973 4.04294 1.55078 8.00098 1.55078ZM8.00098 2.55078C4.59522 2.55078 1.83398 5.31202 1.83398 8.71777C1.83434 12.1232 4.59544 14.8838 8.00098 14.8838C11.4062 14.8834 14.1666 12.123 14.167 8.71777C14.167 5.31223 11.4064 2.55113 8.00098 2.55078ZM8.00098 8.21777C8.27682 8.21812 8.50098 8.44185 8.50098 8.71777V11.3838C8.5008 11.6596 8.27672 11.8834 8.00098 11.8838C7.72494 11.8838 7.50115 11.6598 7.50098 11.3838V8.71777C7.50098 8.44163 7.72483 8.21777 8.00098 8.21777ZM8.00684 5.55078C8.28283 5.55095 8.50684 5.77474 8.50684 6.05078C8.50666 6.32667 8.28272 6.55061 8.00684 6.55078H8.00098C7.72494 6.55078 7.50115 6.32677 7.50098 6.05078C7.50098 5.77464 7.72483 5.55078 8.00098 5.55078H8.00684Z" fill="#A1A1AA"/>
+                                    </svg>
+                                </div>
+                                <ul class="points__list">
+                                    <li class="points__item">
+                                        <div class="points__element points-element">
+                                            <div class="points-element__name">Готовы к списанию</div>
+                                            <div class="points-element__value">549 Б</div>  
+                                        </div>
+                                    </li>
+                                    <li class="points__item">
+                                        <div class="points__element points-element points-element_open">
+                                            <div class="points-element__name">Ожидают активации</div>
+                                            <div class="points-element__value">1540 Б</div>  
+                                        </div> 
+                                        <ul class="points__list points__list_show">
+                                            <li class="points__item">
+                                                <div class="points__element points-element">
+                                                    <div class="points-element__name">Активируются 24 августа</div>
+                                                    <div class="points-element__value">800 Б</div>  
+                                                </div>
+                                            </li>
+                                            <li class="points__item">                                                 
+                                                <div class="points__element points-element">
+                                                    <div class="points-element__name">Активируются 31 сентября</div>
+                                                    <div class="points-element__value">745 Б</div>  
+                                                </div>                                                 
+                                            </li>
+                                        </ul>                                 
+                                    </li>
+                                    <li class="points__item">
+                                        <div class="points__element points-element">
+                                            <div class="points-element__name">Сгорят 18 августа</div>
+                                            <div class="points-element__value">549 Б</div>  
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                        <div class="points__update">Данные обновлены 24 июля</div>
+                    </div>
+                    <div class="points__card-side">
+                        <div class="card__image card-image">
+                            <img class="card-image__image" src="img/card_gold.png" alt="">
+                            <div class="card-image__overlay"></div>
+                            <div class="card-image__number">555 001 053 837</div>
+                            <div class="card-image__title">
+                                <div class="card-image__status">GOLD</div>
+                                <div class="card-image__amount">Сумма покупок за 12 месяцев:  110 546 ₽ </div>                                
+                            </div>
+                        </div>
+                        <div class="card__conditions conditions">
+                            <div class="conditions__item">
+                                <div class="conditions__name">5%</div>
+                                <div class="conditions__value">Кэшбек за каждый заказ</div>
+                            </div>
+                            <div class="conditions__item">
+                                <div class="conditions__name">30%</div>
+                                <div class="conditions__value">Оплата заказа баллами</div>
+                            </div>
+                            <div class="conditions__item">
+                                <div class="conditions__name">365 дней</div>
+                                <div class="conditions__value">Срок действия баллов</div>
+                            </div>
+                            <div class="conditions__item">
+                                <div class="conditions__name">1 балл</div>
+                                <div class="conditions__value">1 рубль</div>
+                            </div>
+                        </div>
+                        <div class="card__message">Потратьте  8 000 ₽ до 25 сентября и сохраните статус Gold</div>
+
+                        <div class="card__progress progress">
+                            <div class="progress__status progress-status">
+                                <div class="progress-status__item">
+                                    <div class="progress-status__name">BASE</div>
+                                    <div class="progress-status__image">
+                                        <img src="img/card_base.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="progress-status__item">
+                                    <div class="progress-status__name progress-status__name_center">SILVER</div>
+                                    <div class="progress-status__image">
+                                        <img src="img/card_silver.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="progress-status__item">
+                                    <div class="progress-status__name progress-status__name_right">GOLD</div>
+                                    <div class="progress-status__image">
+                                        <img src="img/card_gold.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress__wrapper">
+                                <progress class="progress__line" value="75" max="100"></progress>
+                                <div class="progress__marker progress__marker_0 progress__marker_active"></div>
+                                <div class="progress__marker progress__marker_50 progress__marker_active"></div>
+                                <div class="progress__marker progress__marker_100 progress__marker_active"></div>                                
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="loyalty__history history" id="history">
+                    <div class="section-title">История</div>
+                    <div class="history__header">
+                        <div class="history__filter">
+                            <button class="history__filter-item history__filter-item_active">Все</button>
+                            <button class="history__filter-item">Начисление</button>
+                            <button class="history__filter-item">Списание</button>
+                        </div>
+                        <div class="history__date-picker">
+                            <span>29.06.25 – 29.07.2025</span>
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.333 1.88379C13.6091 1.88379 13.833 2.10765 13.833 2.38379V3.55176C14.3711 3.5525 14.8141 3.55583 15.1826 3.58594C15.6304 3.62252 16.0127 3.69881 16.3623 3.87695C16.9267 4.16456 17.3852 4.62405 17.6729 5.18848C17.851 5.5381 17.9273 5.92036 17.9639 6.36816C17.9999 6.81006 18 7.35917 18 8.05078V15.0508C18 15.7424 18 16.2915 17.9639 16.7334C17.9273 17.181 17.8509 17.5626 17.6729 17.9121C17.3853 18.4765 16.9267 18.936 16.3623 19.2236C16.0127 19.4018 15.6304 19.4781 15.1826 19.5146C14.7407 19.5508 14.1918 19.5508 13.5 19.5508H6.5C5.80823 19.5508 5.25933 19.5508 4.81738 19.5146C4.36958 19.4781 3.98732 19.4018 3.6377 19.2236C3.0733 18.936 2.61473 18.4765 2.32715 17.9121C2.14911 17.5626 2.07272 17.181 2.03613 16.7334C2.00003 16.2915 2 15.7424 2 15.0508V8.05078C2 7.35917 2.00005 6.81006 2.03613 6.36816C2.07272 5.92036 2.14901 5.5381 2.32715 5.18848C2.61476 4.62405 3.07327 4.16456 3.6377 3.87695C3.98732 3.69881 4.36958 3.62252 4.81738 3.58594C5.18593 3.55583 5.62887 3.5525 6.16699 3.55176V2.38379C6.16699 2.10765 6.39085 1.88379 6.66699 1.88379C6.94299 1.88396 7.16699 2.10776 7.16699 2.38379V3.55078H12.833V2.38379C12.833 2.10776 13.057 1.88396 13.333 1.88379ZM3 15.0508C3 15.7587 3.00025 16.2597 3.03223 16.6514C3.06374 17.037 3.12356 17.2729 3.21777 17.458C3.40946 17.8342 3.71563 18.1403 4.0918 18.332C4.2769 18.4263 4.51267 18.486 4.89844 18.5176C5.29023 18.5496 5.79168 18.5508 6.5 18.5508H13.5C14.2083 18.5508 14.7098 18.5496 15.1016 18.5176C15.4873 18.486 15.7231 18.4263 15.9082 18.332C16.2844 18.1403 16.5905 17.8342 16.7822 17.458C16.8764 17.2729 16.9363 17.037 16.9678 16.6514C16.9997 16.2597 17 15.7587 17 15.0508V9.55078H3V15.0508ZM9.72266 11.1348C9.87608 11.0325 10.0737 11.0224 10.2363 11.1094C10.3988 11.1964 10.5 11.3665 10.5 11.5508V15.2168H11.042C11.3179 15.217 11.5418 15.4409 11.542 15.7168C11.542 15.9928 11.318 16.2166 11.042 16.2168H8.95801C8.68201 16.2166 8.45801 15.9928 8.45801 15.7168C8.45818 15.4409 8.68212 15.217 8.95801 15.2168H9.5V12.4844L9.02734 12.7998C8.79758 12.953 8.48716 12.8909 8.33398 12.6611C8.18081 12.4314 8.24289 12.1209 8.47266 11.9678L9.72266 11.1348ZM7.16699 5.7168C7.16699 5.99283 6.94298 6.21662 6.66699 6.2168C6.39085 6.2168 6.16699 5.99294 6.16699 5.7168V4.55176C5.62984 4.55257 5.22582 4.55626 4.89844 4.58301C4.51265 4.61455 4.27691 4.67424 4.0918 4.76855C3.71557 4.96031 3.40948 5.26633 3.21777 5.64258C3.12348 5.82771 3.06375 6.06338 3.03223 6.44922C3.00022 6.84101 3 7.3425 3 8.05078V8.55078H17V8.05078C17 7.3425 16.9998 6.84101 16.9678 6.44922C16.9362 6.06338 16.8765 5.82771 16.7822 5.64258C16.5905 5.26633 16.2844 4.96031 15.9082 4.76855C15.7231 4.67424 15.4873 4.61455 15.1016 4.58301C14.7742 4.55626 14.3702 4.55257 13.833 4.55176V5.7168C13.833 5.99294 13.6091 6.2168 13.333 6.2168C13.057 6.21662 12.833 5.99283 12.833 5.7168V4.55078H7.16699V5.7168Z" fill="#525665"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="history__wrapper">
+
+                        <div class="history__block">
+                            <div class="history__title">Июль</div>
+                            <div class="history__item history-item">
+                                <div class="history-item__date">24 июля</div>
+                                <div class="history-item__order">
+                                    <span class="history-item__order-action">Онлайн‑покупка</span>
+                                    <a href="#" class="history-item__order-link">Заказ #45678</a>
+                                </div>
+                                <div class="history-item__points">
+                                    <div class="history-item__points-changes">+ 549 Б</div>
+                                    <div class="history-item__points-event history-item__points-event_clock">Активируются 07.08.25</div>
+                                </div>
+                            </div>
+                            <div class="history__item history-item">
+                                <div class="history-item__date">24 июля</div>
+                                <div class="history-item__order">
+                                    <div class="history-item__order-action">Покупка в ТЦ «Метрополис»</div>
+                                </div>
+                                <div class="history-item__points">
+                                    <div class="history-item__points-changes">+ 549 Б</div>
+                                    <div class="history-item__points-event history-item__points-event_fire">Сгорят 20.01.26</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="history__block">
+                            <div class="history__title">Июнь</div>
+                            <div class="history__item history-item">
+                                <div class="history-item__date">24 июля</div>
+                                <div class="history-item__order">
+                                    <div class="history-item__order-action">Подарок к дню рождения</div>
+                                </div>
+                                <div class="history-item__points">
+                                    <div class="history-item__points-changes">+ 549 Б</div>
+                                    <div class="history-item__points-event history-item__points-event_fire">Сгорят 07.08.25</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="loyalty__faq faq" id="faq">
+                    <div class="section-title">Часто задаваемые вопросы</div>
+                    <div class="faq__item">
+                        <button class="faq__question">Где я могу получить карту Gulliver Club?</button>
+                        <div class="faq__answer">
+                            <div class="faq__answer-inner">
+                                <p>Вы можете связаться с нами любым удобным для вас способом. Все необходимые телефоны и адреса электронной почты указаны в разделе Контакты. Сотрудники офиса компании Gulliver работают в будние дни с 9:00 до 18:00 по московскому времени.</p>
+                                <p>Вы можете связаться с нами любым удобным для вас способом. Все необходимые телефоны и адреса электронной почты указаны в разделе Контакты. Сотрудники офиса компании Gulliver работают в будние дни с 9:00 до 18:00 по московскому времени.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question">В каких магазинах действует программа лояльности?</button>
+                        <div class="faq__answer">
+                            <div class="faq__answer-inner">
+                                <p>Вы можете связаться с нами любым удобным для вас способом. Все необходимые телефоны и адреса электронной почты указаны в разделе Контакты. Сотрудники офиса компании Gulliver работают в будние дни с 9:00 до 18:00 по московскому времени.</p>
+                                <p>Вы можете связаться с нами любым удобным для вас способом. Все необходимые телефоны и адреса электронной почты указаны в разделе Контакты. Сотрудники офиса компании Gulliver работают в будние дни с 9:00 до 18:00 по московскому времени.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question">Как узнать размер скидки по моей карте?</button>
+                        <div class="faq__answer">
+                            <div class="faq__answer-inner">
+                                <p>Вы можете связаться с нами любым удобным для вас способом. Все необходимые телефоны и адреса электронной почты указаны в разделе Контакты. Сотрудники офиса компании Gulliver работают в будние дни с 9:00 до 18:00 по московскому времени.</p>
+                                <p>Вы можете связаться с нами любым удобным для вас способом. Все необходимые телефоны и адреса электронной почты указаны в разделе Контакты. Сотрудники офиса компании Gulliver работают в будние дни с 9:00 до 18:00 по московскому времени.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="loyalty__container">
+                    <a href="#" class="loyalty__button">Условия программы лояльности</a>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="footer">footer</footer>
     </div>
-
-    <footer class="footer">footer</footer>
-
     <script src="js/script.js"></script>
 </body>
 
