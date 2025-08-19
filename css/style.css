@@ -165,38 +165,53 @@ body {
     gap: 16px;
 }
 .points__item {
-}
-.points__element {
-}
-.points-element {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 12px;    
 }
-.points-element__name {
+
+.points-item__name {
     color: var(--main);
     font-weight: 400;
     font-size: 16px;
     line-height: 20px; 
     width: 220px; 
 }
-.points-element__value {
+.points-item__value {
     color: var(--black);
     font-weight: 500;
-    font-size: 24px;
+    font-size: 14px;
     line-height: 100%;   
 }
-.points__item > .points__list {
+.points-item_big .points-item__value {
+    font-size: 24px;
+}
+.points__sublist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     /* display: none; */
 }
-.points__item > .points__list > .points__item .points-element .points-element__name {
+.points-subitem {
+    display: flex;
+    align-items: center;
+    gap: 12px; 
+}
+.points-subitem__name {
     color: var(--secondary);
+    font-weight: 400;
     font-size: 14px;
+    line-height: 19px;
     padding-left: 20px;
+    width: 220px;
 }
-.points__item > .points__list > .points__item .points-element .points-element__value {
+.points-subitem__value {
+    color: var(--black);
+    font-weight: 500;
     font-size: 14px;
+    line-height: 100%;   
 }
+
 .points__update {
     color: var(--secondary);
     font-weight: 400;
