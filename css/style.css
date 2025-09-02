@@ -304,6 +304,110 @@ button {
 }
 /* #endregion history */
 
+/* #region about */
+.about {
+}
+.about__text {
+    color: var(--primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 32px;
+}
+.about__text p {
+    margin-bottom: 10px;
+}
+.brands {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;    
+}
+.brands__item {
+    height: 160px;
+    background-color: var(--bg);
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.brands__logo {
+}
+.brands__text {
+    color: var(--primary);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+/* #endregion about */
+
+/* #region levels */
+.levels {
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+.cards__item {
+
+}
+.cards__image {
+    margin-bottom: 10px;
+}
+.cards__title {
+    color: var(--primary);
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 10px;
+}
+.cards__row {
+    padding: 20px 0;
+    color: var(--primary);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+.cards__row:not(:last-child) {
+    border-bottom: 1px solid var(--lines);    
+}
+.cards__row p:not(:last-child) {
+    margin-bottom: 10px;
+}
+/* #endregion levels */
+
+/* #region get-points */
+.get-points {
+}
+.get-points__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px; 
+}
+.get-points__item {
+    height: 200px;
+    background-color: var(--bg);
+    border-radius: 4px;
+    padding: 16px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.get-points__num {
+    color: var(--primary);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;   
+}
+.get-points__text {
+    color: var(--primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+/* #endregion get-points */
+
 /* #region faq */
 .faq__wrapper {
     margin-bottom: 32px;
