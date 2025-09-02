@@ -1,3 +1,4 @@
+/* #region common */
 html {
     scroll-behavior: smooth;
 }
@@ -48,44 +49,50 @@ body {
 .footer {
     background-color: antiquewhite;
 }
+/* #endregion common */
 
-.personal-loyalty {
+/* #region layouts */
+.loyalty {
     display: grid;
     grid-template-columns: 3fr 9fr;
     column-gap: 40px;
     padding: 30px 0 100px 0;
 }
-.personal-loyalty__sidebar {
+/* sidebar */
+.loyalty__sidebar {
 }
 .sidebar {
 }
-.sidebar__username {
+.sidebar__user-info {
     color: var(--main);
     font-weight: 400;
     font-size: 19px;
     line-height: 20px;
     margin-bottom: 30px;
 }
+.user-info {}
 .sidebar__menu {
+}
+.sidebar-menu {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.sidebar__menu-item {
+.sidebar-menu__item {
     color: var(--main);
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     text-decoration: none;
 }
-.sidebar__menu-item_active {
+.sidebar-menu__item_active {
     color: var(--black-hover);
 }
-.sidebar__menu-count {
-    color: var(--gray_02);
+.loyalty__content {
 }
-.personal-loyalty__content {
-}
+
+/* #endregion layouts */
+
 .loyalty {
 }
 .loyalty__title {
