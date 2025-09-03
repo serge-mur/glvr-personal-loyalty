@@ -16,6 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    const dropdown = document.querySelector('.dropdown');
+    const dropdownBtn = document.querySelector('.dropdown__button');
+    if (dropdown) {
+        dropdownBtn.addEventListener("click", () => {         
+            dropdown.classList.toggle('dropdown_open');
+        });              
+    }
+
     // offcanvas
     const offcanvasLink = document.querySelectorAll('.offcanvas-link');
     offcanvasLink.forEach(link => {
