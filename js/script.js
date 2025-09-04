@@ -16,13 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    const dropdown = document.querySelector('.dropdown');
-    const dropdownBtn = document.querySelector('.dropdown__button');
-    if (dropdown) {
+    const dropdowns = document.querySelectorAll('.dropdown');
+    dropdowns.forEach(dropdown => {
+        const dropdownBtn = dropdown.querySelector('.dropdown__button');
         dropdownBtn.addEventListener("click", () => {         
-            dropdown.classList.toggle('dropdown_open');
-        });              
-    }
+            dropdown.classList.toggle('dropdown_open');            
+        });
+    });
 
     // offcanvas
     const offcanvasLink = document.querySelectorAll('.offcanvas-link');

@@ -47,6 +47,14 @@
 
             <div class="loyalty__content">
 
+                <div class="page-select dropdown">
+                    <div class="dropdown__button">Мои баллы</div>
+                    <div class="dropdown__content">
+                        <a href="#" class="dropdown__item dropdown__item_active">Мои баллы</a>
+                        <a href="#" class="dropdown__item">Программа лояльности</a>
+                    </div>
+                </div>
+
                 <h1 class="page-title">Gulliver Family</h1>
 
                 <section class="section card">
@@ -147,7 +155,9 @@
                         </div>
                     </div>
                     <div class="history__wrapper">
-
+                        <div class="history__empty" style="display: none;">
+                            За выбранный период не было операций по списанию или начислению баллов.
+                        </div>
                         <div class="history__block">
                             <div class="history__title">Июль</div>
                             <div class="history__item history-item">
@@ -194,13 +204,28 @@
 
         <footer class="footer">footer</footer>
 
+        <!-- offcanvas -->
         <div class="offcanvas" id="cashback-points">
             <div class="offcanvas__overlay"></div>
             <div class="offcanvas__wrapper">
                 <button class="offcanvas__close"></button>
                 <div class="offcanvas__title">Как работают кэшбек-баллы</div>
                 <div class="offcanvas__content">
-                    123
+                    <ul>
+                        <li>Начисляем 5% с каждой покупки</li>
+                        <li>Активируются через 14 дней (покупка в магазине) / 30 дней (интернет-заказ).</li>
+                        <li>При оплате товаров баллы бренда списываются первыми. Если баллов не хватило, спишутся кешбэк‑баллы</li>
+                        <li>Можно оплатить до 30 % любого заказа</li>
+                        <li>Срок жизни — 365 дней.</li>
+                    </ul>
+                    <p>Баллы не спишутся:</p>
+                    <ul>
+                        <li>В аутлетах</li>
+                        <li>В отделах «Gulliver Toys»</li>
+                        <li>На переоценку ‑10%/‑20%</li>
+                        <li>Подарочные сертификаты</li>
+                        <li>Оплату пакетов</li>
+                    </ul>
                 </div>
             </div>        
         </div>
@@ -211,7 +236,21 @@
                 <button class="offcanvas__close"></button>
                 <div class="offcanvas__title">Как работают баллы брендов</div>
                 <div class="offcanvas__content">
-                    456
+                    <ul>
+                        <li>Начисляем по акциям конкретного бренда (GLVR, Button Blue, Gulliver)</li>
+                        <li>Списываются только на товары этого бренда</li>
+                        <li>При оплате товаров баллы бренда списываются первыми. Если баллов не хватило, спишутся кешбэк‑баллы</li>
+                        <li>Можно оплатить до 30 % любого заказа</li>
+                        <li>Срок действия указан рядом с баллами (обычно 14‑90 дней, не более 365 дней)</li>
+                    </ul>
+                    <p>Баллы не спишутся:</p>
+                    <ul>
+                        <li>В аутлетах</li>
+                        <li>В отделах «Gulliver Toys»</li>
+                        <li>На переоценку ‑10%/‑20%</li>
+                        <li>Подарочные сертификаты</li>
+                        <li>Оплату пакетов</li>
+                    </ul>
                 </div>
             </div>        
         </div>
@@ -222,10 +261,60 @@
                 <button class="offcanvas__close"></button>
                 <div class="offcanvas__title">Уровни привилегий «Gulliver Family»</div>
                 <div class="offcanvas__content">
-                    789
+                    <div class="offcanvas__status">
+                        <div class="offcanvas__status-item offcanvas__status-item_active">BASE</div>
+                        <div class="offcanvas__status-item">SILVER</div>
+                        <div class="offcanvas__status-item">GOLD</div>
+                    </div>
+                    <div class="offcanvas__card offcanvas-card">
+                        <div class="offcanvas-card__card-image">
+                            <img src="img/card_base.png" alt="">
+                        </div>
+                        <div class="offcanvas-card__grid">
+                            <div class="offcanvas-card__item">
+                                <div class="offcanvas-card__value">7%</div>
+                                <div class="offcanvas-card__name">Кэшбек за каждый заказ</div>
+                            </div>
+                            <div class="offcanvas-card__item">
+                                <div class="offcanvas-card__value">30%</div>
+                                <div class="offcanvas-card__name">Оплата заказа баллами</div>
+                            </div>
+                            <div class="offcanvas-card__item">
+                                <div class="offcanvas-card__value">365 дней</div>
+                                <div class="offcanvas-card__name">Срок действия баллов</div>
+                            </div>
+                            <div class="offcanvas-card__item">
+                                <div class="offcanvas-card__value">1 балл</div>
+                                <div class="offcanvas-card__name">1 рубль</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Кэшбэк-баллы:</h3>
+                    <ul>
+                        <li>Начисляем 5% с каждой покупки</li>
+                        <li>Активируем через 14 дней после онлайн-заказа/30 дней после интернет-заказа</li>
+                        <li>Списываются до 30% от стоимости товаров</li>
+                        <li>Срок жизни 365 дней</li>
+                        <li>500 баллов ко дню рождения</li>
+                        <li>500 баллов ко дню рождения ребенка</li>
+                        <li>500 баллов за год участия в программе</li>
+                    </ul>
+                    <h3>Рост уровня:</h3>
+                    <p>Когда ваши покупки за последние 360 дней превысят 30 000 рублей, вы перейдёте на уровень SILVER.</p>
+                    <h3>Сохранение уровня:</h3>
+                    <p>Дополнительно сохранять уровень не нужно.</p>
+                    <h3>Баллы не спишутся:</h3>
+                    <ul>
+                        <li>В аутлетах</li>
+                        <li>В отделах «Gulliver Toys»</li>
+                        <li>На переоценку ‑10%/‑20%</li>
+                        <li>Подарочные сертификаты</li>
+                        <li>Оплату пакетов</li>
+                    </ul>
                 </div>
             </div>        
         </div>
+        <!-- end offcanvas -->
 
     </div>
 
