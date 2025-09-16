@@ -18,12 +18,9 @@
 
             <div class="loyalty__sidebar sidebar">
 
-                <div class="sidebar__user-info user-info">
-                    <div class="user-info__name">
-                        Константин<br>
-                        Константинопольский                       
-                    </div>
-                    <div class="user-info__points"><span class="user-info__count">0</span> баллов</div>
+                <div class="sidebar__user-name">
+                    Константин<br>
+                    Константинопольский                       
                 </div>
 
                 <nav class="sidebar__menu sidebar-menu">
@@ -55,12 +52,14 @@
                     </div>
                 </div>
 
-                <h1 class="page-title">Gulliver Family</h1>
+                <h1 class="page-title">Мои баллы</h1>
 
                 <section class="section card">
                     <div class="card__card-side">
+                        <div class="card__title">Программа лояльности <a href="javascript:void(0)" class="offcanvas-link offcanvas-toggle offcanvas-toggle_gray" data-target="privilege-levels"></a></div>
                         <div class="card__image card-image">
-                            <img src="img/card_back.png" alt="">
+                            <img src="img/card_team_back.png" alt="">
+                            <!-- <img src="img/card_back_light.png" alt=""> -->
                             <div class="card-image__info">
                                 <div class="card__top">
                                     <div class="card-image__points-wrapper">
@@ -69,6 +68,7 @@
                                         </div>
                                         <a href="javascript:void(0)" class="offcanvas-link offcanvas-toggle offcanvas-toggle_primary" data-target="cashback-points"></a>
                                     </div>
+                                    <!-- <div class="card-image__empty">У вас пока нет баллов</div> -->
                                     <div class="card-image__list">
                                         <div class="card-image__item">
                                             <div class="card-image__item-event card-image__item-event_clock">Ожидают активации</div>
@@ -80,9 +80,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card__bottom">
-                                    <div class="card-image__name">Gold <a href="javascript:void(0)" class="offcanvas-link offcanvas-toggle offcanvas-toggle_white" data-target="privilege-levels"></a></div>
-                                    <div class="card-image__logo"><img src="img/guliver_family_logo_wh.svg" alt=""></div>
+                                <div class="card-image__logo">
+                                    <img src="img/guliver_family_logo_wh.svg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -99,7 +98,7 @@
                                 <div class="progress__marker progress__marker_100"></div>                                
                             </div>
                         </div>
-                        <div class="card__message">Потратьте  8 000 ₽ до 25 сентября и сохраните статус Gold</div>
+                        <div class="card__message">До уровня GOLD осталось сделать покупки на сумму: 22 300 ₽</div>
                     </div>
                     <div class="card__points-side">
                         <div class="card__title">Промо <a href="javascript:void(0)" class="offcanvas-link offcanvas-toggle offcanvas-toggle_gray" data-target="brands-points"></a></div>
@@ -109,30 +108,42 @@
                                     <img src="img/gulliver_logo_mc.svg" alt="">
                                 </div>
                                 <div class="card-brands__points">348</div>
-                                <div class="card-brands__events">Сгорят 05.09</div>
+                                <div class="card-brands__events card-brands__events_fire">Сгорят 05.09</div>
                             </div>
                             <div class="card-brands__item">
                                 <div class="card-brands__logo">
                                     <img src="img/bb_logo_mc.svg" alt="">
                                 </div>
                                 <div class="card-brands__points">1 241</div>
-                                <div class="card-brands__events">Сгорят 05.09</div>
+                                <div class="card-brands__events card-brands__events_fire">Сгорят 05.09</div>
                             </div>
                             <div class="card-brands__item">
                                 <div class="card-brands__logo">
                                     <img src="img/glvr_logo_mc.svg" alt="">
                                 </div>
                                 <div class="card-brands__points">221</div>
-                                <div class="card-brands__events">Сгорят 05.09</div>
+                                <div class="card-brands__events card-brands__events_fire">Сгорят 05.09</div>
                             </div>
                             <div class="card-brands__item">
                                 <div class="card-brands__logo">
                                     <img src="img/toys_logo_mc.svg" alt="">
                                 </div>
-                                <div class="card-brands__points">116</div>
-                                <div class="card-brands__events">Сгорят 05.09</div>
+                                <div class="card-brands__points">0</div>
+                                <div class="card-brands__events">У вас пока нет баллов</div>
                             </div>
                         </div>
+
+                        <div class="card__data card-data">
+                            <div class="card-data__item">
+                                <div class="card-data__name">Номер карты</div>
+                                <div class="card-data__value">00016258322V</div>
+                            </div>
+                            <div class="card-data__item">
+                                <div class="card-data__name">Номер телефона</div>
+                                <div class="card-data__value">+ 7 (999) 999-99-99</div>
+                            </div>
+                        </div>
+
                     </div>
                 </section>
 
@@ -159,15 +170,14 @@
                             За выбранный период не было операций по списанию или начислению баллов.
                         </div>
                         <div class="history__block">
-                            <div class="history__title">Июль</div>
                             <div class="history__item history-item">
                                 <div class="history-item__date">24 июля</div>
                                 <div class="history-item__order">
-                                    <span class="history-item__order-action">Онлайн‑покупка</span>
+                                    <div class="history-item__order-action">Онлайн‑покупка</div>
                                     <a href="#" class="history-item__order-link">Заказ #45678</a>
                                 </div>
                                 <div class="history-item__points">
-                                    <div class="history-item__points-changes">+ 549 Б</div>
+                                    <div class="history-item__points-changes history-item__points-changes_plus">549 баллов</div>
                                     <div class="history-item__points-event history-item__points-event_clock">Активируются 07.08.25</div>
                                 </div>
                             </div>
@@ -177,26 +187,24 @@
                                     <div class="history-item__order-action">Покупка в ТЦ «Метрополис»</div>
                                 </div>
                                 <div class="history-item__points">
-                                    <div class="history-item__points-changes">+ 549 Б</div>
+                                    <div class="history-item__points-changes history-item__points-changes_minus">549 баллов</div>
                                     <div class="history-item__points-event history-item__points-event_fire">Сгорят 20.01.26</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="history__block">
-                            <div class="history__title">Июнь</div>
                             <div class="history__item history-item">
                                 <div class="history-item__date">24 июля</div>
                                 <div class="history-item__order">
                                     <div class="history-item__order-action">Подарок к дню рождения</div>
                                 </div>
                                 <div class="history-item__points">
-                                    <div class="history-item__points-changes">+ 549 Б</div>
+                                    <div class="history-item__points-changes">549 баллов</div>
                                     <div class="history-item__points-event history-item__points-event_fire">Сгорят 07.08.25</div>
                                 </div>
-                            </div>
+                            </div>                            
                         </div>
 
                     </div>
+                    <button class="history__more">Показать еще</button>
                 </section>
 
             </div>
